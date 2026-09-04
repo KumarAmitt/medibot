@@ -1,0 +1,56 @@
+:root {
+  --bg: #f3f6f8;
+  --bg-elevated: #ffffff;
+  --ink: #10233a;
+  --ink-soft: #4b5d73;
+  --line: #d7e0e8;
+  --teal: #0d7377;
+  --teal-dark: #09585b;
+  --teal-soft: #e6f4f4;
+  --navy: #0a2540;
+  --amber: #b45309;
+  --amber-soft: #fff7ed;
+  --rose: #be123c;
+  --rose-soft: #fff1f2;
+  --shadow: 0 16px 40px rgba(10, 37, 64, 0.08);
+  font-family:
+    'Segoe UI',
+    'Sora',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #d7f0ef 0%, transparent 50%),
+    radial-gradient(900px 400px at 100% 0%, #dce7f5 0%, transparent 45%),
+    var(--bg);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--teal);
+}

@@ -1,0 +1,29 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "MediBot — Advanced RAG assistant for MediAssist Health Network"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "docling>=2.36.0",
+    "fastapi>=0.115.0",
+    "flashrank>=0.2.10",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-groq>=0.3.0",
+    "pydantic-settings>=2.7.0",
+    "pyjwt>=2.10.0",
+    "pypdf>=5.0.0",
+    "python-dotenv>=1.0.0",
+    "python-multipart>=0.0.18",
+    "qdrant-client[fastembed]>=1.13.0",
+    "uvicorn[standard]>=0.34.0",
+]
+
+[project.scripts]
+backend = "backend.main:run"
+medibot-ingest = "backend.ingest:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
