@@ -10,10 +10,6 @@ wheels/
 .venv
 .env
 
-# Local vector store
-qdrant_data/
-**/qdrant_data/
-
 
 # Frontend ======================================
 # Logs
